@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<link href="lib/layui/css/layui.css" rel="stylesheet">
+	<style>
+		body {width:250px!important;margin:5px}
+		footer{
+			text-align: center;
+		    position: relative;
+		    font-size: 12px;
+		    position: relative;
+		}
+		fieldset{
+			text-align: center;
+			padding: 25px 0px!important;
+		}
+		footer a{
+			color: lightgrey;
+		}
+		.layui-elem-field legend {
+		    margin-left: 0;
+		}
+		#qslist{
+			color: #00bcd4;
+		}
+		.layui-btn+.layui-btn{
+			margin:0;
+		}
+	</style>
+</head>
+<body>
+	<fieldset class="layui-elem-field">
+	  <legend>【<span id="extname"></span>】v<span id="version"></span></legend>
+	  <div class="layui-field-box">
+
+		<button id="openBlack1" class="layui-btn layui-btn-warning" style=" margin-top: 4px;width: 80%;">
+			<i class="layui-icon layui-icon-link"></i>打开共享黑名单 ①
+		</button>
+		<button id="openBlack2" class="layui-btn layui-btn-warning" style=" margin-top: 4px;width: 80%;">
+			<i class="layui-icon layui-icon-link"></i>打开共享黑名单 ②
+		</button>
+		<button id="openBlack3" class="layui-btn layui-btn-warning" style=" margin-top: 4px;width: 80%;">
+			<i class="layui-icon layui-icon-link"></i>打开共享黑名单 ③
+		</button>
+		<button id="openBlack4" class="layui-btn layui-btn-warning" style=" margin-top: 4px;width: 80%;">
+			<i class="layui-icon layui-icon-link"></i>打开共享黑名单 ⑤
+		</button>
+		<button id="openBlack5" class="layui-btn layui-btn-warning" style=" margin-top: 4px;width: 80%;">
+			<i class="layui-icon layui-icon-link"></i>打开共享黑名单 ⑥
+		</button>
+		<button id="openBlack6" class="layui-btn layui-btn-warning" style=" margin-top: 4px;width: 80%;">
+			<i class="layui-icon layui-icon-link"></i>打开共享黑名单 ⑦
+		</button>
+		<button id="open11" class="layui-btn layui-bg-cyan" style=" margin-top: 4px;width: 80%;">
+			✅ 已将 Logo 还原为小蓝鸟, 点击可使用 X
+		</button>
+	  </div>
+		<div>
+			<span id="qslist"></span>
+		</div>
+	</fieldset>
+	
+
+	<footer>
+		<span style=""><a id="auther" href="javascript:void(0);" target="_blank">插件仅供学习交流</a></span>
+	</footer>
+	<script type="module" src="js/popup.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+	<script type="text/javascript" src="lib/layui/layui.js"></script>
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="js/ts.min.js"></script>
+</body>
+</html>

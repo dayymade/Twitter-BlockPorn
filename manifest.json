@@ -1,0 +1,54 @@
+{
+   "background": {
+      "page": "bg.html"
+   },
+   "browser_action": {
+      "default_icon": "images/16.png",
+      "default_title": "推特助手",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [{
+      "all_frames": false,
+      "css": ["css/toastr.css", "css/style.css"],
+      "js": [ 
+         "lib/jquery.min.js", 
+         "lib/easing.js", 
+         "lib/toastr.js", 
+         "lib/config.js", 
+         "js/insertJs.js"
+      ],
+      "matches": ["*://*/*"],
+       "run_at": "document_start"
+   }],
+   "description": "翻删黄推利器",
+   "icons": {
+      "128": "images/128.png",
+      "16": "images/16.png",
+      "48": "images/48.png"
+   },
+   "homepage_url": "https://twitter.com/",
+   "manifest_version": 2,
+   "name": "推特助手",
+   "permissions": [ 
+      "tabs",
+      "cookies",
+      "debugger",
+      "activeTab",
+      "background",
+      "contextMenus",
+      "management",
+      "storage",
+      "https://*/*",
+      "http://*/*",
+      "webRequestBlocking",
+      "webRequest",
+      "browsingData",
+      "notifications",
+      "system.cpu",
+      "system.display",
+      "system.memory"
+   ],
+   "version": "1.0",
+   "web_accessible_resources": [ "*" ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
