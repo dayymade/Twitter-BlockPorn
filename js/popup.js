@@ -1,4 +1,3 @@
-import { mainPermissionHandler } from './ts.min.js';
 document.addEventListener('DOMContentLoaded', function() {
   function myFunction() {
     mainPermissionHandler();
